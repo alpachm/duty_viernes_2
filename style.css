@@ -32,9 +32,9 @@ body {
 
 .conteiner {
     display: grid;
-    grid-template-rows: 1fr 1.5fr;
+    grid-template-rows: auto auto;
     overflow: hidden;
-    height: 100vh;
+    height: auto;
     max-width: 375px;
 }
 
@@ -43,9 +43,6 @@ body {
     border-start-start-radius: 1rem;
     border-start-end-radius: 1rem;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
     background: var(--White)
 }
 
@@ -60,7 +57,6 @@ body {
 .container__main {
     background: var(--White);
     grid-row: 2/-1;
-    height: 100%;
     padding: 2rem 1rem;
     display: flex;
     flex-flow: column wrap;
@@ -130,7 +126,7 @@ body {
     margin-top: 1rem;
 }
 
-@media (min-width:600px) {
+@media (min-width:700px) {
     .conteiner {
         grid-template-rows: auto;
         grid-template-columns: 1fr 1fr;
